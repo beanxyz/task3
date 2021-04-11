@@ -13,7 +13,7 @@ jobs:
             terraform init -input=false
             terraform fmt
             terraform validate
-            terraform plan -out tfapply -var-file=/tfvars/staging/st-test-results-bucket_ap-southeast-2.tfvars 
+            terraform plan -out tfapply -var-file=\tfvars\staging\st-test-results-bucket_ap-southeast-2.tfvars 
       - persist_to_workspace:
           root: .
           paths:
